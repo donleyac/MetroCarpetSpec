@@ -55,8 +55,9 @@ const CarouselClick = React.createClass({
     let carouselClass="carousel-container" + (this.props.animateSlide?" animateSlide":"");
     return (
       <div className={carouselClass}>
+        {this.props.targets &&
         <Targets activeIndex={this.state.index} direction={this.state.direction}
-          onClick={this.handleSelect} slides={this.props.slides}></Targets>
+          onClick={this.handleSelect} slides={this.props.slides}></Targets>}
         <Slides activeIndex={this.state.index} onClick={this.handleSelect}
           slides={this.props.slides}
           animateSlide={this.props.animateSlide?this.props.animateSlide:undefined}>

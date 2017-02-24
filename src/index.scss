@@ -2,7 +2,6 @@
 body {
   margin: 0px;
 }
-
 .rnd-btn {
   padding: 10px;
   margin: 15px;
@@ -10,4 +9,7 @@ body {
   text-decoration: none;
   background: $color1;
   color: $color2;
+}
+p,a, h1 {
+  font-family: 'Roboto', sans-serif;
 }

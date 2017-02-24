@@ -7,7 +7,7 @@ import './styles.scss'
 export default function(props){
   var slides = [
   {service: (<p>Experience</p>),
-  size: "col-sm-3",
+  icon: "http://placehold.it/250x250",
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -17,7 +17,7 @@ export default function(props){
     <li>Processes tailored specifically to multi-housing renovations </li>
   </ul>)},
   {service: (<p>Quality</p>),
-  size: "col-sm-3",
+  icon: "http://placehold.it/250x250",
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -26,7 +26,7 @@ export default function(props){
     <li>Project Managers who inspect every unit before you do </li>
   </ul>)},
   {service: (<p>Speed</p>),
-  size: "col-sm-3",
+  icon: "http://placehold.it/250x250",
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -36,7 +36,7 @@ export default function(props){
     <li>Our unique "On-Time Completion Guarantee" or we pay the rent </li>
   </ul>)},
   {service: (<p>Price</p>),
-  size: "col-sm-3",
+  icon: "http://placehold.it/250x250",
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -45,13 +45,25 @@ export default function(props){
     <li>The financial strength to tackle your largest projects</li>
   </ul>)}];
   return (
-    <div className="home">
+    <div className="home page">
       <BackgroundImage image={require('./assets/home_carpet.jpg')} banner height="80vh">
         <h1>Renew Your Look</h1>
         <p>With Metropolitian Carpet Specialists</p>
         <Link className="rnd-btn">Contact Us</Link>
       </BackgroundImage>
-      <CarouselClick slides={slides}></CarouselClick>
-    </div>
+      <h1>Our Services</h1>
+      <CarouselClick targets slides={slides}></CarouselClick>
+      <h1>Why Metropolitian Carpet Specialists?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nullam in imperdiet lorem. Aliquam aliquam justo tempor est tristique,
+        et vehicula ante egestas. Suspendisse at urna volutpat, condimentum nunc
+        non, feugiat nulla. Suspendisse viverra maximus ultricies. Cras sagittis
+        nisi vel magna tempor euismod. Aliquam est arcu, pretium in dapibus sed,
+        tincidunt sed magna. Morbi pharetra nisl vel erat mollis, vitae
+        malesuada orci molestie.</p>
+    <CarouselClick slides={slides}></CarouselClick>
+    <h1>Christos Companies</h1>
+
+  </div>
   )
 }

@@ -6,7 +6,6 @@ function Targets(props){
     var indexCarousel = props.activeIndex;
     var directionCarousel = props.direction;
     return (
-      //REMOVE col-sm-3 ON HORIZONTAL
       <div className="row targets">
         { props.slides.map(function(image, index){
           var targetClasses = classNames ({
@@ -16,6 +15,7 @@ function Targets(props){
           });
           return (
             <div onClick={() => props.onClick(index)} className={targetClasses}>
+              <img src={image.icon} />
               {image.service}
             </div>)
         },this)}

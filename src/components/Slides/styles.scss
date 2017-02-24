@@ -1,4 +1,5 @@
 .slider {
+  margin: auto;
   width: 80%;
   padding: 20px 5px 20px 0px;
   .slide{
@@ -38,7 +39,6 @@
   }
   @media (min-width: 650px) {
     height: 420px;
-    float: left;
     .slide {
       height: 100%;
       .caption {
