@@ -1,0 +1,13 @@
+@import  "_colors";
+body {
+  margin: 0px;
+}
+
+.rnd-btn {
+  padding: 10px;
+  margin: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: $color1;
+  color: $color2;
+}

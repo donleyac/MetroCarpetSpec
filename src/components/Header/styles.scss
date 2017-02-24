@@ -1,0 +1,93 @@
+@import '../../_colors.scss';
+.navbar {
+  background-color: $color2;
+  opacity: .95;
+  position: fixed;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    background-color: $color1;
+    border-radius: 50px;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+  }
+  .overflow-btn {
+    display: none;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, $color1 0%, $color1 20%,
+    transparent 20%,transparent 40%, $color1 40%, $color1 60%,
+    transparent 60%, transparent 80%, $color1 80%, $color1 100%);
+  }
+  .overflow-content {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    a {
+      padding: 0px 10px 0px 10px;
+      display: inline-block;
+      color: $color1;
+      font-family: sans-serif;
+      text-decoration: none;
+      transition: all .5s ease;
+      &:hover {color: $color3;}
+      &.active {color: $color3;}
+    }
+  }
+  @media screen and (max-width: 768px) {
+      .wrapper {
+        height: 50px;
+      }
+      .logo{
+        margin-top: 2px;
+      }
+      .overflow:hover {
+        .overflow-content {
+          display: block;
+        }
+      }
+      .overflow-btn {
+        margin-top: 7px;
+        display: block;
+        float: right;
+
+        &:hover {
+          background: linear-gradient(to bottom, $color3 0%, $color3 20%,
+          transparent 20%, transparent 40%, $color3 40%, $color3 60%,
+           transparent 60%, transparent 80%, $color3 80%, $color3 100%);
+        }
+      }
+      .overflow-content {
+        width: 50%;
+        display: none;
+        position: absolute;
+        right: 0;
+        top:42px;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        margin: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        a{
+          display: block;
+          font-size: 1.5em;
+          padding: 12px 16px;
+          text-align: right;
+        }
+        a:hover {
+          background-color: #f1f1f1;
+        }
+      }
+      .wrapper {display: block;}
+    }
+}
