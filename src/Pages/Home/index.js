@@ -6,8 +6,8 @@ import './styles.scss'
 
 export default function(props){
   var slides = [
-  {service: (<p>Experience</p>),
-  icon: "http://placehold.it/250x250",
+  {service: (<p>Cleaning</p>),
+  icon: require('../../components/Targets/assets/icon-cleaning.png'),
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -16,8 +16,8 @@ export default function(props){
     <li>Skilled, efficient and dependable subcontractors </li>
     <li>Processes tailored specifically to multi-housing renovations </li>
   </ul>)},
-  {service: (<p>Quality</p>),
-  icon: "http://placehold.it/250x250",
+  {service: (<p>Restoration</p>),
+  icon: require('../../components/Targets/assets/icon-restoration.png'),
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -25,8 +25,8 @@ export default function(props){
     <li>Most work performed by Paramount employees </li>
     <li>Project Managers who inspect every unit before you do </li>
   </ul>)},
-  {service: (<p>Speed</p>),
-  icon: "http://placehold.it/250x250",
+  {service: (<p>Flood Services</p>),
+  icon: require('../../components/Targets/assets/icon-flood.png'),
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -35,8 +35,8 @@ export default function(props){
     <li>Strong relationships with all leading multi-housing vendors </li>
     <li>Our unique "On-Time Completion Guarantee" or we pay the rent </li>
   </ul>)},
-  {service: (<p>Price</p>),
-  icon: "http://placehold.it/250x250",
+  {service: (<p>Power Washing</p>),
+  icon: require('../../components/Targets/assets/icon-pw.png'),
   background: require('./assets/home_carpet.jpg'),
   detail: (
   <ul>
@@ -54,7 +54,7 @@ export default function(props){
       <h1>Our Services</h1>
       <CarouselClick targets slides={slides}></CarouselClick>
       <h1>Why Metropolitian Carpet Specialists?</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Nullam in imperdiet lorem. Aliquam aliquam justo tempor est tristique,
         et vehicula ante egestas. Suspendisse at urna volutpat, condimentum nunc
         non, feugiat nulla. Suspendisse viverra maximus ultricies. Cras sagittis
@@ -63,7 +63,28 @@ export default function(props){
         malesuada orci molestie.</p>
     <CarouselClick slides={slides}></CarouselClick>
     <h1>Christos Companies</h1>
-
+    <div className="row-items">
+      <div>
+        <img src="http://placehold.it/250x250" />
+        <p>Christos Building Services</p>
+      </div>
+      <div>
+        <img src="http://placehold.it/250x250" />
+        <p>US Vending</p>
+      </div>
+      <div>
+        <img src="http://placehold.it/250x250" />
+        <p>Paramount Services</p>
+      </div>
+      <div>
+        <img src="http://placehold.it/250x250" />
+        <p>Cabinet Craft</p>
+      </div>
+      <div>
+        <img src="http://placehold.it/250x250" />
+        <p>Sarantis Properties</p>
+      </div>
+    </div>
   </div>
   )
 }

@@ -1,29 +1,25 @@
+@import '../../_colors.scss';
 .targets {
   display: flex;
   justify-content: center;
   .box {
-    margin: 20px;
+    padding: 35px;
     img {
       max-width: 100%;
+      width: 75px;
     }
     p {
-      color:  #0b0a35;
+      color:  $color5;
     }
   }
   .box:hover {
     & {
       cursor: pointer;
-      background: #0b0a35;
-    }
-    p {
-      color: white;
+      background: $color6;
     }
   }
   .activeClass{
-    background: #0b0a35;
-    p {
-      color: white;
-    }
+    background: $color6;
   }
   .activeClass:hover{
     cursor:default;

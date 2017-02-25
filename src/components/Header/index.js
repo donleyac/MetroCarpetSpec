@@ -14,7 +14,7 @@ export default function(props) {
       <div>
         <nav className="navbar">
           <nav className="wrapper">
-            <IndexLink to="/"><div className="logo"></div></IndexLink>
+            <IndexLink to="/"><img className="logo" src={require('./assets/metro_logo.jpg')} /></IndexLink>
             <span className="overflow">
               <div className="overflow-btn" />
               <div className="overflow-content">

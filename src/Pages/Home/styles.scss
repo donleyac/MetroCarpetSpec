@@ -1,3 +1,25 @@
+@import '../../_colors.scss';
 .home {
   text-align: center;
+  .row-items {
+    img {
+      padding: 10px;
+      width: 150px;
+    }
+  }
+  .background-img {
+    h1 {
+      background: $gradient1;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;
+      margin: 10px 0px 10px 0px;
+    }
+    p {
+      background: $gradient1;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+    }
+  }
 }
