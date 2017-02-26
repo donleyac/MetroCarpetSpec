@@ -2,48 +2,81 @@ import React from 'react';
 import {Link} from 'react-router';
 import BackgroundImage from '../../components/BackgroundImg/index.js';
 import CarouselClick from '../../components/CarouselClick/index.js';
+import Companies from '../../components/Companies/index.js';
 import './styles.scss'
 
 export default function(props){
   var slides = [
   {service: (<p>Cleaning</p>),
   icon: require('../../components/Targets/assets/icon-cleaning.png'),
-  background: require('./assets/home_carpet.jpg'),
+  background: require('../../components/Slides/assets/leftward/cleaning.png'),
   detail: (
-  <ul>
-    <li>45,000+ units renovated since 1998 </li>
-    <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
-    <li>Skilled, efficient and dependable subcontractors </li>
-    <li>Processes tailored specifically to multi-housing renovations </li>
-  </ul>)},
+    <div className="half right">
+      <ul>
+        <li>45,000+ units renovated since 1998 </li>
+        <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
+        <li>Skilled, efficient and dependable subcontractors </li>
+        <li>Processes tailored specifically to multi-housing renovations </li>
+      </ul>
+    </div>)},
   {service: (<p>Restoration</p>),
   icon: require('../../components/Targets/assets/icon-restoration.png'),
-  background: require('./assets/home_carpet.jpg'),
+  background: require('../../components/Slides/assets/leftward/restoration.png'),
   detail: (
-  <ul>
-    <li>A dedicated team of managers and crews committed to your satisfaction </li>
-    <li>Most work performed by Paramount employees </li>
-    <li>Project Managers who inspect every unit before you do </li>
-  </ul>)},
+    <div className="half right">
+      <ul>
+        <li>45,000+ units renovated since 1998 </li>
+        <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
+        <li>Skilled, efficient and dependable subcontractors </li>
+        <li>Processes tailored specifically to multi-housing renovations </li>
+      </ul>
+    </div>)},
   {service: (<p>Flood Services</p>),
   icon: require('../../components/Targets/assets/icon-flood.png'),
-  background: require('./assets/home_carpet.jpg'),
+  background: require('../../components/Slides/assets/leftward/flood.png'),
   detail: (
-  <ul>
-    <li>A network of strategically located, fully stocked warehouses </li>
-    <li>In-house cabinet and counter-top manufacturing </li>
-    <li>Strong relationships with all leading multi-housing vendors </li>
-    <li>Our unique "On-Time Completion Guarantee" or we pay the rent </li>
-  </ul>)},
+    <div className="half right">
+      <ul>
+        <li>45,000+ units renovated since 1998 </li>
+        <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
+        <li>Skilled, efficient and dependable subcontractors </li>
+        <li>Processes tailored specifically to multi-housing renovations </li>
+      </ul>
+    </div>)},
   {service: (<p>Power Washing</p>),
   icon: require('../../components/Targets/assets/icon-pw.png'),
-  background: require('./assets/home_carpet.jpg'),
+  background: require('../../components/Slides/assets/leftward/power.png'),
   detail: (
-  <ul>
-    <li>Economies of scale</li>
-    <li>Leveraged buying power</li>
-    <li>The financial strength to tackle your largest projects</li>
-  </ul>)}];
+    <div className="half right">
+      <ul>
+        <li>45,000+ units renovated since 1998 </li>
+        <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
+        <li>Skilled, efficient and dependable subcontractors </li>
+        <li>Processes tailored specifically to multi-housing renovations </li>
+      </ul>
+    </div>)}];
+
+    var review_slides = [
+    {background: require('../../components/Slides/assets/rightward/dog.png'),
+    detail: (
+      <div className="half left">
+        <ul>
+          <li>45,000+ units renovated since 1998 </li>
+          <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
+          <li>Skilled, efficient and dependable subcontractors </li>
+          <li>Processes tailored specifically to multi-housing renovations </li>
+        </ul>
+      </div>)},
+    {background: require('../../components/Slides/assets/rightward/family.png'),
+    detail: (
+      <div className="half left">
+        <ul>
+          <li>45,000+ units renovated since 1998 </li>
+          <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
+          <li>Skilled, efficient and dependable subcontractors </li>
+          <li>Processes tailored specifically to multi-housing renovations </li>
+        </ul>
+      </div>)}];
   return (
     <div className="home page">
       <BackgroundImage image={require('./assets/home_carpet.jpg')} banner height="80vh">
@@ -61,30 +94,9 @@ export default function(props){
         nisi vel magna tempor euismod. Aliquam est arcu, pretium in dapibus sed,
         tincidunt sed magna. Morbi pharetra nisl vel erat mollis, vitae
         malesuada orci molestie.</p>
-    <CarouselClick slides={slides}></CarouselClick>
+    <CarouselClick slides={review_slides}></CarouselClick>
     <h1>Christos Companies</h1>
-    <div className="row-items">
-      <div>
-        <img src="http://placehold.it/250x250" />
-        <p>Christos Building Services</p>
-      </div>
-      <div>
-        <img src="http://placehold.it/250x250" />
-        <p>US Vending</p>
-      </div>
-      <div>
-        <img src="http://placehold.it/250x250" />
-        <p>Paramount Services</p>
-      </div>
-      <div>
-        <img src="http://placehold.it/250x250" />
-        <p>Cabinet Craft</p>
-      </div>
-      <div>
-        <img src="http://placehold.it/250x250" />
-        <p>Sarantis Properties</p>
-      </div>
-    </div>
+    <Companies />
   </div>
   )
 }

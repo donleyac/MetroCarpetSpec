@@ -53,6 +53,7 @@ const CarouselClick = React.createClass({
   },
   render() {
     let carouselClass="carousel-container" + (this.props.animateSlide?" animateSlide":"");
+    carouselClass+=" "+ (this.props.class?this.props.class:"");
     return (
       <div className={carouselClass}>
         {this.props.targets &&

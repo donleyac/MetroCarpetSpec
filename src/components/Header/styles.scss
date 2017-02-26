@@ -1,10 +1,53 @@
 @import '../../_colors.scss';
 .navbar {
   background-color: $color2;
-  opacity: .95;
-  position: fixed;
   min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  .top-nav{
+    background-color: $color5;
+    .top-wrapper {
+      margin: 0 auto;
+      max-width: 960px;
+      padding: 0 2%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+    h2 {
+      font-size: 15px;
+      padding: 0px 5px 0px 5px;
+    }
+    p{
+      font-size: 15px;
+      padding: 0px 5px 0px 5px;
+    }
+    .office {
+      color: white;
+    }
+    .emerg{
+      color: red;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      fill: white;
+      color: white; //ie8
+      margin: 0px 5px 0px 5px;
+      &:hover {
+        border-radius: 100%;
+        color: $color5; // IE8
+        fill: $color5;
+        background-color: white;
+        transform: scale(1.25);
+        transition: background-color .5s, transform .5s ease-out;
+      }
+    }
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
 
   .wrapper {
     margin: 0 auto;
@@ -43,9 +86,6 @@
     }
   }
   @media screen and (max-width: 768px) {
-      .wrapper {
-        height: 50px;
-      }
       .logo{
         margin-top: 2px;
       }
@@ -70,7 +110,7 @@
         display: none;
         position: absolute;
         right: 0;
-        top:42px;
+        top:90px;
         background-color: #f9f9f9;
         min-width: 160px;
         margin: 0;

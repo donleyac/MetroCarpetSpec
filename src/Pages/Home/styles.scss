@@ -1,12 +1,6 @@
 @import '../../_colors.scss';
 .home {
   text-align: center;
-  .row-items {
-    img {
-      padding: 10px;
-      width: 150px;
-    }
-  }
   .background-img {
     h1 {
       background: $gradient1;

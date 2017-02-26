@@ -1,0 +1,17 @@
+@import '../../_colors.scss';
+.companies {
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+      background: $color6;
+    }
+  }
+  p {
+    margin: 0px;
+  }
+  img {
+    height: 75px;
+  }
+}
