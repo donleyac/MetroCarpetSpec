@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "facebook-plugins": "^1.0.5",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",

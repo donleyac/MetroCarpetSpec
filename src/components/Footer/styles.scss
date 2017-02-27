@@ -3,7 +3,8 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-around;;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background: $color1;
   background-image: $gradient1;
   color: white;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {FBPage} from 'facebook-plugins';
 import './styles.scss';
 
 export default function(props) {
@@ -16,7 +17,9 @@ export default function(props) {
           <p ><h2>Business Hours:</h2>8:00 a.m. to 5:00 p.m,
           Monday through Friday <br/> 24-hour emergency service available</p>
         </div>
-        <img className="facebook" src={'http://placehold.it/200x250'} />
+        <FBPage appId="yourFacebookAppId"
+        href="https://www.facebook.com/Metropolitan-Carpet-Specialists-Inc-131101043624574/"
+        tabs={['timeline', 'events', 'messages']}/>
       </div>
     )
 }
