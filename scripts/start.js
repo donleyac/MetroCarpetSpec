@@ -32,7 +32,7 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
 }
 
 // Tools like Cloud9 rely on this.
-var DEFAULT_PORT = process.env.PORT || 3000;
+var DEFAULT_PORT = parseInt(process.env.PORT, 10) || 3000;
 var compiler;
 var handleCompile;
 
@@ -201,7 +201,8 @@ function addMiddleware(devServer) {
       onError: onProxyError(proxy),
       secure: false,
       changeOrigin: true,
-      ws: true
+      ws: true,
+      xfwd: true
     });
     devServer.use(mayProxy, hpm);
 
