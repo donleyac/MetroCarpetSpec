@@ -6,7 +6,6 @@
     padding: 35px;
     img {
       max-width: 100%;
-      width: 75px;
     }
     p {
       color:  $color5;
@@ -23,5 +22,14 @@
   }
   .activeClass:hover{
     cursor:default;
+  }
+  @media(max-width: 563px){
+    .box {
+      padding: 10px;
+      img {
+        width: 50px;
+      }
+    }
+
   }
 }

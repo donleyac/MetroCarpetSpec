@@ -5,6 +5,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   .top-nav{
     background-color: $color5;
+    height: 48px;
     .top-wrapper {
       margin: 0 auto;
       max-width: 960px;
@@ -46,6 +47,11 @@
       height: 100%;
       width: 100%;
     }
+    @media(max-width: 555px) {
+      h2,p {
+        font-size: 3vw;
+      }
+    }
   }
 }
 
@@ -57,9 +63,18 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .logo {
     display: inline-block;
     width: 300px;
+  }
+  @media(max-width: 370px){
+    .wrapper {
+      height: 61px;
+    }
+    .logo {
+      width: 250px;
+    }
   }
   .overflow-btn {
     display: none;
@@ -85,6 +100,7 @@
       &.active {color: $color3;}
     }
   }
+  //Setup dropdown
   @media screen and (max-width: 768px) {
       .logo{
         margin-top: 2px;

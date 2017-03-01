@@ -11,7 +11,10 @@ class Contacts extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
+  contactClick() {
+    var contactform = document.getElementById("contact-form");
+    contactform.classList ? contactform.classList.toggle('open') : contactform.className += ' open';
+  }
   handleChange(field, e) {
     var nextState = {};
     nextState[field] = e.target.value;
@@ -28,8 +31,8 @@ class Contacts extends React.Component {
   }
   render() {
     return (
-      <div className="contact-form">
-        <p id="contact-button">Contact Us Today!</p>
+      <div id="contact-form">
+        <p onClick={this.contactClick} className="contact-button">Contact Us Today!</p>
         <form onSubmit={this.handleSubmit} encType="multipart/form-data">
           <div className="form-group">
             <input
@@ -54,6 +57,10 @@ class Contacts extends React.Component {
               className="submit rnd-btn"
               type="submit"> Submit
             </button>
+              <div className="numbers">
+                <p>Emergency: 877-687-5730</p>
+                <p>Office: 703-964-3210</p>
+            </div>
           </div>
         </form>
       </div>

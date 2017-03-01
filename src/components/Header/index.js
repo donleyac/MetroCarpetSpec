@@ -16,7 +16,7 @@ export default function(props) {
           <div className="top-wrapper">
           <h2 className="office">Office</h2>
           <p className="office">703-964-3210</p>
-          <h2 className="emerg">24 Hr. Emergency Flood</h2>
+          <h2 className="emerg">Emergency</h2>
           <p className="emerg">877-687-5730</p>
           <a href="#" className="icon" title="Facebook">
             <svg viewBox="0 0 512 512">

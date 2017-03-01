@@ -1,24 +1,31 @@
-.contact-form {
+@import '../../_colors.scss';
+#contact-form {
   z-index: 999;
   display: flex;
   color: white;
   position: fixed;
-  bottom: -228px;
-  // bottom: 0px;
+  bottom: -276px;
+  transition: bottom 1s;
   right: 20px;
   width: 300px;
   flex-direction: column;
-  #contact-button {
+  &.open {
+    bottom: 0px;
+  }
+  .contact-button {
     text-align: center;
-    background-color: black;
+    background: $gradient3;
     margin: 0px;
     padding: 12px;
     align-self: flex-end;
     font-size: 12px;
+    cursor: pointer;
+    outline: 2px solid $color6;
   }
   .form-group {
     padding: 15px;
-    background-color: black;
+    background: $color6;
+    outline: 1px $color1 solid;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -26,9 +33,25 @@
     input,textarea {
       margin: 5px;
       padding: 5px;
+      border: 1px solid $color1;
+      font-family: 'Roboto', sans-serif;
+      &::-webkit-input-placeholder {
+        color: darken($color6,60%);
+      }
     }
+    .numbers{
+      text-align: center;
+      p {
+        color: $color5;
+        font-weight: 500;
+        margin: 5px;
+        font-size: 13px;
+      }
+    }
+    .submit {
+      height: 40px;
+    }
+
   }
-  .submit {
-    align-self: flex-end;
-  }
+
 }

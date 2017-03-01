@@ -5,13 +5,11 @@ export default function(props) {
     let addedStyle={
       backgroundImage: 'url(' + props.image + ')',
     };
-    console.log(addedStyle);
     if(props.banner){
-      addedStyle['width']: '100%';
+      addedStyle['width'] = '100%';
     }
-    console.log(addedStyle);
     if(props.height){
-      addedStyle['height']:props.height;
+      addedStyle['height'] = props.height;
     }
     let className ="background-img ";
     className+= props.class?props.class:"";
