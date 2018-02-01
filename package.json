@@ -2,13 +2,14 @@
   "name": "metrocarpet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://donleyac.github.io/Metropolitian/",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.2",
     "react-addons-css-transition-group": "^15.4.2",
     "classnames": "^2.2.5",
-    "facebook-plugins": "^1.0.5"    
+    "facebook-plugins": "^1.0.5"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -59,7 +60,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
