@@ -28,25 +28,6 @@
     .emerg{
       color: red;
     }
-    .icon {
-      width: 30px;
-      height: 30px;
-      fill: white;
-      color: white; //ie8
-      margin: 0px 5px 0px 5px;
-      &:hover {
-        border-radius: 100%;
-        color: $color5; // IE8
-        fill: $color5;
-        background-color: white;
-        transform: scale(1.25);
-        transition: background-color .5s, transform .5s ease-out;
-      }
-    }
-    svg {
-      height: 100%;
-      width: 100%;
-    }
     @media(max-width: 555px) {
       h2,p {
         font-size: 3vw;

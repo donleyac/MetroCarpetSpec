@@ -1,0 +1,28 @@
+.divide-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5vh;
+    li {
+			list-style:none;
+			background: rgba(255,255,255,0.6);
+			font-size: 20px;
+			color: black;
+			text-align: center;
+    }
+    .col-sm-4 {
+      width: 370px;
+    }
+
+}
+@media(min-width: 770px) {
+    .divide-row {
+      margin-top: 5vh;
+    }
+  }
+  @media(max-width: 770px) {
+    .divide-row {
+      margin-top: 0px;
+    }
+  }

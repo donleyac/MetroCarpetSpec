@@ -1,13 +1,12 @@
 import React from 'react';
 import './styles.scss';
 
-function BackgroundImg(props) {
+export function BackgroundImg(props) {
+    let width = props.width?props.width:"100%";
     let addedStyle={
       backgroundImage: 'url(' + props.image + ')',
     };
-    if(props.banner){
-      addedStyle['width']='100%';
-    }
+    addedStyle['width']=width;
     if(props.height){
       addedStyle['height']=props.height;
     }
@@ -20,4 +19,3 @@ function BackgroundImg(props) {
     )
   }
 
-module.exports = BackgroundImg;
