@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import './styles.scss';
 
 function chunkList(list, chunks){
+	list = list.reverse();
   var start=0;
   var chunked = [];
   for(let i=0; i<chunks;i++){
     let slice = Math.ceil(list.slice(start).length/(chunks-i));
     chunked.push(list.slice(start,start+slice));
     start+=slice;
-  }
-  return chunked;
+	}
+  return chunked.reverse();
 }
 
 export class DivideContent extends Component{
@@ -20,7 +21,7 @@ export class DivideContent extends Component{
 		<div className='divide-row'>
 				{chunkList(this.props.list,this.props.chunk).map(list =>
 				<ul className={columnClass}>
-						{list.map((elem,index) =>
+						{list.reverse().map((elem,index) =>
 						<li key={index}>{elem}</li>
 						)}
 				</ul>

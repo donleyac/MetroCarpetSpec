@@ -27,7 +27,7 @@ export default function(props) {
             <div className="overflow-content">
               <ListLink to="/commercial" info="Commercial"/>
               <ListLink to="/residential" info="Residential"/>
-              <ListLink to="/pay" info="Pay&nbsp;Bill"/>
+              {/* <ListLink to="/pay" info="Pay&nbsp;Bill"/> */}
             </div>
           </span>
         </nav>

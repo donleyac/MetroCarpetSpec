@@ -15,13 +15,13 @@ export default function(props) {
             <p className="info"><h2>Emergency:</h2>877-687-5730</p>
           </div>
           <div className="email">
-            <p className="info"><h2>Residential:</h2>VIRGINIAADD!!!!@dcmetrocarpet.com</p>
-            <p className="info"><h2>Commercial:</h2>ELSAADD!!!!@dcmetrocarpet.com</p>
+            <p className="info"><h2>Residential:</h2>office@dcmetrocarpet.com</p>
+            <p className="info"><h2>Commercial:</h2>eecheverria@@dcmetrocarpet.com</p>
           </div>
           <p ><h2>Business Hours:</h2>8:00 a.m. to 5:00 p.m,
           Monday through Friday <br/> 24-hour emergency service available</p>
           <div className="logos">
-          <a href="#" className="icon" title="Facebook">
+          <a href="https://www.facebook.com/Metropolitan-Carpet-Specialists-Inc-131101043624574/" className="icon" title="Facebook">
             <svg viewBox="0 0 512 512">
             <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/>
           </svg></a>
