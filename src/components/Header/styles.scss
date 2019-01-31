@@ -47,9 +47,13 @@
 
   .logo {
     display: inline-block;
-    width: 300px;
   }
-  @media(max-width: 370px){
+  @media (min-width: 440px) {
+    .logo {
+      width: 360px;
+    }
+  }
+  @media(max-width: 440px){
     .wrapper {
       height: 61px;
     }
@@ -71,6 +75,7 @@
     justify-content: flex-end;
     list-style-type: none;
     a {
+      font-size: 20px;
       padding: 0px 10px 0px 10px;
       display: inline-block;
       color: $color1;
@@ -92,7 +97,7 @@
         }
       }
       .overflow-btn {
-        margin-top: 7px;
+        margin-top: 15px;
         display: block;
         float: right;
 

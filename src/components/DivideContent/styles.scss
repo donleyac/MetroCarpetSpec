@@ -4,26 +4,37 @@
     align-content: center;
     justify-content: center;
     margin-top: 5vh;
+
+    ul {
+      background: rgba(255,255,255,0.8);
+      padding: 10px 0px 10px 0px;
+      margin: 10px;
+    }
+
     li {
 			list-style:none;
-			background: rgba(255,255,255,0.6);
 			font-size: 20px;
 			color: black;
       text-align: center;
-      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      padding: 10px 0px 10px 0px;
     }
-    .col-sm-4 {
-      width: 370px;
-    }
+
 
 }
 @media(min-width: 770px) {
     .divide-row {
       margin-top: 5vh;
     }
-  }
-  @media(max-width: 770px) {
-    .divide-row {
-      margin-top: 0px;
+    .col-sm-4 {
+      width: 370px;
     }
   }
+@media(max-width: 770px) {
+  .divide-row {
+    margin-top: 0px;
+  }
+  .col-sm-4 {
+    width: 300px;
+  }
+}

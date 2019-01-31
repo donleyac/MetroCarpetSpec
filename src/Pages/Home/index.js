@@ -66,8 +66,8 @@ class Home extends React.Component {
     return (
       <div className="home page">
         <BackgroundImg image={require('./assets/home_carpet.jpg')} banner height="80vh">
-          <h1>Renew Your Look</h1>
-          <p>With Metropolitian Carpet Specialists</p>
+          <h1 className="title">Renew Your Look</h1>
+          <p className="subtitle">With Metropolitian Carpet Specialists</p>
           <a onClick={this.contactClick} className="rnd-btn">Contact Us</a>
         </BackgroundImg>
         <h1>Our Services</h1>

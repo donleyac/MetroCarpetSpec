@@ -5,13 +5,13 @@ import {BackgroundImg} from '../../components/BackgroundImg/index';
 import './styles.scss'
 
 export default function(props){
-  let background = require('./assets/skyline_stock.jpg');
+  let background = require('./assets/washingtondc.jpg');
   return (
     <div className="commercial">
-    <BackgroundImg width="70%" image={background}>
+    <BackgroundImg width="100%" image={background}>
         <h1 className="slogan">Serving the multi-housing community since 1995..here are some of the commercial properties we’ve serviced. </h1>
         <DivideContent
-          bootLvl="sm" className="list" chunk={3} list={[
+          bootLvl="sm" className="list" chunkSize={[4,4,3]} list={[
             "Bozzuto Management",
             "Dittmar",
             "Franklin Johnston",

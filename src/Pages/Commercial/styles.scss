@@ -2,8 +2,22 @@
   .slogan {
     font-size: 20px;
     text-align: left;
-    padding: 5px 20px;
     color:rgb(51, 51, 51);
     font-weight: 400;
+    background: rgba(255,255,255,0.8);
   }
+  .banner {
+    width: 100%;
+  }
+  @media(min-width: 770px) {
+   .slogan {
+    padding: 30px;
+
+   }
+  }
+@media(max-width: 770px) {
+  .slogan {
+    padding: 10px
+  }
+}
 }
