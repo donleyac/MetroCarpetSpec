@@ -21,10 +21,9 @@ class Home extends React.Component {
     detail: (
       <div className="half right">
         <ul>
-          <li>45,000+ units renovated since 1998 </li>
-          <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
-          <li>Skilled, efficient and dependable subcontractors </li>
-          <li>Processes tailored specifically to multi-housing renovations </li>
+          <li>Free Estimate, we give you an honest opinion whether to restore or replace the carpet </li>
+          <li>Professionally Trained, and Experienced Carpet Cleaning Technicians </li>
+          <li>Over 2.5 Million Square feet of carpet cleaned since 1995 </li>
         </ul>
       </div>)},
     {service: (<p>Restoration</p>),
@@ -33,10 +32,9 @@ class Home extends React.Component {
     detail: (
       <div className="half right">
         <ul>
-          <li>45,000+ units renovated since 1998 </li>
-          <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
-          <li>Skilled, efficient and dependable subcontractors </li>
-          <li>Processes tailored specifically to multi-housing renovations </li>
+          <li>Free Estimate, we give you an honest opinion whether to restore or replace the carpet </li>
+          <li>Experts at removing Stains, repairing bleach stains, and patching carpet </li>
+          <li>Color dyeing  to help restore the appearance of the carpet </li>
         </ul>
       </div>)},
     {service: (<p>Flood Services</p>),
@@ -45,10 +43,8 @@ class Home extends React.Component {
     detail: (
       <div className="half right">
         <ul>
-          <li>45,000+ units renovated since 1998 </li>
-          <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
-          <li>Skilled, efficient and dependable subcontractors </li>
-          <li>Processes tailored specifically to multi-housing renovations </li>
+          <li>24 hour emergency services 1-877-687-5730 </li>
+          <li>Water extraction and drying services for all types of situations </li>
         </ul>
       </div>)},
     {service: (<p>Power Washing</p>),
@@ -57,10 +53,8 @@ class Home extends React.Component {
     detail: (
       <div className="half right">
         <ul>
-          <li>45,000+ units renovated since 1998 </li>
-          <li>Experienced professionals who understand the unique requirements of working in multi-housing </li>
-          <li>Skilled, efficient and dependable subcontractors </li>
-          <li>Processes tailored specifically to multi-housing renovations </li>
+          <li>Free Estimates </li>
+          <li>Specializing in cleaning parking garage areas </li>
         </ul>
       </div>)}];
     return (

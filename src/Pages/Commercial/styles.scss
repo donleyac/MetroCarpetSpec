@@ -1,10 +1,21 @@
 .commercial {
+
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+  margin: auto;
   .slogan {
     font-size: 20px;
     text-align: left;
     color:rgb(51, 51, 51);
     font-weight: 400;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, .3);
   }
   .banner {
     width: 100%;

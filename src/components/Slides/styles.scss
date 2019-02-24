@@ -61,7 +61,7 @@
         height: 100%;
         .caption {
           padding: 10px 0px 10px 0px;
-          font-size:2vw;
+          font-size:13px;
         }
       }
   }
@@ -95,6 +95,19 @@
         }
         &.right {
           justify-content: flex-end;
+          @media(min-width: 1800px){
+            margin-right: 7%;
+          }
+          @media(min-width: 1550px) and (max-width: 1800px){
+            margin-right: 6%;
+          }
+          @media(min-width: 1200px) and (max-width: 1200px){
+            margin-right: 5%;
+          }
+          @media(max-width: 1200px){
+            margin-right: 2%;
+          }
+
         }
         &.left {
           justify-content: flex-start;

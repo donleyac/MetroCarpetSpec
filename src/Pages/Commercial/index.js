@@ -9,7 +9,8 @@ export default function(props){
   return (
     <div className="commercial">
     <BackgroundImg width="100%" image={background}>
-        <h1 className="slogan">Serving the multi-housing community since 1995..here are some of the commercial properties we’ve serviced. </h1>
+        <h1 className="slogan">We are proud to have served properties for many of the most respected and well-known names in the multi-housing industry since 1995.
+        Recently we have completed work for the following: </h1>
         <DivideContent
           bootLvl="sm" className="list" chunkSize={[4,4,3]} list={[
             "Bozzuto Management",

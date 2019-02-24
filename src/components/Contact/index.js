@@ -23,7 +23,7 @@ class Contacts extends React.Component {
 
   handleSubmit() {
     var placeholder = 'mailto:';
-    var receipient = 'eecheverria@dcmetrocarpet.com?';
+    var receipient = 'eecheverria@dcmetrocarpet.com,office@dcmetrocarpet.com?';
     var subject = 'subject=Metropolitian%20Carpet%20 Website' + '%20-%20' + String(this.state.name) + '&';
     var body = 'body=' + String(this.state.number) +'%0D%0A%0D%0A'+ String(this.state.message) +'%0D%0A%0D%0A';
     var link = placeholder + receipient + subject + body;
