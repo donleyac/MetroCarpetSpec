@@ -22,6 +22,9 @@
     cursor: pointer;
     outline: 2px solid $color6;
   }
+  button.submit.rnd-btn:disabled {
+    background-image: linear-gradient(to bottom, #9e9e9e, #606265);
+  }
   .form-group {
     padding: 15px;
     background: $color6;
@@ -29,6 +32,12 @@
     display: flex;
     flex-direction: column;
     align-content: stretch;
+
+    .form-group2 {
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+    }
 
     input,textarea {
       margin: 5px;
@@ -38,6 +47,9 @@
       &::-webkit-input-placeholder {
         color: darken($color6,60%);
       }
+    }
+    .error {
+      border: 1px solid red;
     }
     .numbers{
       text-align: center;
@@ -51,7 +63,10 @@
     .submit {
       height: 40px;
     }
-
+    .response {
+      color: $color1;
+      font-size: 21.8px;
+    }
   }
 
 }
